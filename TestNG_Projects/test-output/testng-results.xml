@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="46248" started-at="2017-11-03T18:48:56Z" finished-at="2017-11-03T18:49:43Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="17700" started-at="2017-11-03T18:48:56Z" finished-at="2017-11-03T18:49:14Z">
+      <class name="com.TestNG.WebDriverClass.ParralelTest">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.TestNG.WebDriverClass.ParralelTest@756e4d]" name="setup" duration-ms="17660" started-at="2017-11-04T00:18:56Z" finished-at="2017-11-04T00:19:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+      </class> <!-- com.TestNG.WebDriverClass.ParralelTest -->
+    </test> <!-- Test -->
+    <test name="Test1" duration-ms="16624" started-at="2017-11-03T18:49:14Z" finished-at="2017-11-03T18:49:31Z">
+      <class name="com.TestNG.WebDriverClass.ParralelTest">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.TestNG.WebDriverClass.ParralelTest@19a81e8]" name="setup" duration-ms="16611" started-at="2017-11-04T00:19:14Z" finished-at="2017-11-04T00:19:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+      </class> <!-- com.TestNG.WebDriverClass.ParralelTest -->
+    </test> <!-- Test1 -->
+    <test name="Test2" duration-ms="11855" started-at="2017-11-03T18:49:31Z" finished-at="2017-11-03T18:49:43Z">
+      <class name="com.TestNG.WebDriverClass.ParralelTest">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.TestNG.WebDriverClass.ParralelTest@1c7cbad]" name="setup" duration-ms="11849" started-at="2017-11-04T00:19:31Z" finished-at="2017-11-04T00:19:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ie]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+      </class> <!-- com.TestNG.WebDriverClass.ParralelTest -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite -->
+</testng-results>
