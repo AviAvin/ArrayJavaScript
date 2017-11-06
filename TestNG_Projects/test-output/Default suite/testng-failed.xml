@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.TestNG.WebDriverClass.FailedTestExecution">
+      <class name="com.TestNG.WebDriverClass.SoftAssertDemo">
         <methods>
-          <include name="f3"/>
+          <include name="softassert"/>
         </methods>
-      </class> <!-- com.TestNG.WebDriverClass.FailedTestExecution -->
+      </class> <!-- com.TestNG.WebDriverClass.SoftAssertDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

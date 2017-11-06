@@ -14,7 +14,7 @@ public class FailedTestExecution {
 	@Test
 	public void f2()
 	{
-		Assert.assertEquals(20, 20);
+		Assert.assertEquals(20, 20, "Numbers doesn't matched" );
 		System.out.println("Second assertion passed ");
 		
 	}
@@ -25,5 +25,16 @@ public class FailedTestExecution {
 		Assert.assertEquals("Avinash", "Avinash");
 		System.out.println("Third assertion passed ");
 		
+	}
+	@Test
+	public void f4()
+	{
+		String mystring="Avinash Das";
+		Assert.assertTrue(mystring.contains("Avinash"));
+	}
+	@Test
+	public void f5()
+	{
+		Assert.assertTrue(false);
 	}
 }
