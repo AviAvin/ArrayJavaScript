@@ -3,12 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.TestNG.WebDriverClass.ParralelTest">
+      <class name="com.TestNG.WebDriverClass.FailedTestExecution">
         <methods>
-          <include name="setup"/>
-          <include name="testcase"/>
+          <include name="f3"/>
         </methods>
-      </class> <!-- com.TestNG.WebDriverClass.ParralelTest -->
+      </class> <!-- com.TestNG.WebDriverClass.FailedTestExecution -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
