@@ -1,5 +1,7 @@
 package testAnnotations;
 
+ 
+
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
@@ -8,16 +10,22 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+ 
+
 public class TestNGannotation2 {
+	
+	
 	@BeforeSuite
 	public void beforesuite()
 	{
 		System.out.println("Starting TestNG");
+		 
 	}
 	@AfterSuite
 	public void aftersuite()
 	{
 		System.out.println("Stoping TestNG");
+		 
 	}
 	
 	@BeforeTest
@@ -25,11 +33,13 @@ public class TestNGannotation2 {
 	{
 		
 		System.out.println("Start test executions");
+		 
 	}
 	@BeforeClass
 	public void beforeclass()
 	{
 		System.out.println("Initialize Selenium for class2");
+		 
 	}
 	
 	
@@ -39,6 +49,7 @@ public class TestNGannotation2 {
 	{
 		
 		System.out.println("Inside test3");
+		 
 	}
 
 	@AfterClass

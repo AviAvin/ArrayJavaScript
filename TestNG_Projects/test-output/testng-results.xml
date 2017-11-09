@@ -1,75 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="52" started-at="2017-11-07T12:10:29Z" finished-at="2017-11-07T12:10:29Z">
+  <suite name="Default suite" duration-ms="59562" started-at="2017-11-09T07:44:28Z" finished-at="2017-11-09T07:45:28Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="52" started-at="2017-11-07T12:10:29Z" finished-at="2017-11-07T12:10:29Z">
-      <class name="testAnnotations.TestNGannotation2">
-        <test-method status="PASS" signature="beforesuite()[pri:0, instance:testAnnotations.TestNGannotation2@178f375]" name="beforesuite" is-config="true" duration-ms="20" started-at="2017-11-07T17:40:29Z" finished-at="2017-11-07T17:40:29Z">
+    <test name="Default test" duration-ms="59562" started-at="2017-11-09T07:44:28Z" finished-at="2017-11-09T07:45:28Z">
+      <class name="com.TestNG.WebDriverClass.AssertiongetTitle">
+        <test-method status="PASS" signature="assert1()[pri:0, instance:com.TestNG.WebDriverClass.AssertiongetTitle@2bcfcb]" name="assert1" duration-ms="59530" started-at="2017-11-09T13:14:28Z" finished-at="2017-11-09T13:15:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforesuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:testAnnotations.TestNGannotation2@178f375]" name="beforeTest" is-config="true" duration-ms="0" started-at="2017-11-07T17:40:29Z" finished-at="2017-11-07T17:40:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeclass()[pri:0, instance:testAnnotations.TestNGannotation2@178f375]" name="beforeclass" is-config="true" duration-ms="0" started-at="2017-11-07T17:40:29Z" finished-at="2017-11-07T17:40:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeclass -->
-        <test-method status="PASS" signature="test3()[pri:0, instance:testAnnotations.TestNGannotation2@178f375]" name="test3" duration-ms="11" started-at="2017-11-07T17:40:29Z" finished-at="2017-11-07T17:40:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test3 -->
-        <test-method status="PASS" signature="afterclass()[pri:0, instance:testAnnotations.TestNGannotation2@178f375]" name="afterclass" is-config="true" duration-ms="1" started-at="2017-11-07T17:40:29Z" finished-at="2017-11-07T17:40:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterclass -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:testAnnotations.TestNGannotation2@178f375]" name="afterTest" is-config="true" duration-ms="0" started-at="2017-11-07T17:40:29Z" finished-at="2017-11-07T17:40:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="aftersuite()[pri:0, instance:testAnnotations.TestNGannotation2@178f375]" name="aftersuite" is-config="true" duration-ms="0" started-at="2017-11-07T17:40:29Z" finished-at="2017-11-07T17:40:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftersuite -->
-      </class> <!-- testAnnotations.TestNGannotation2 -->
-      <class name="testAnnotations.TestNGannotations">
-        <test-method status="PASS" signature="beforeclass()[pri:0, instance:testAnnotations.TestNGannotations@c87b21]" name="beforeclass" is-config="true" duration-ms="0" started-at="2017-11-07T17:40:29Z" finished-at="2017-11-07T17:40:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeclass -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:testAnnotations.TestNGannotations@c87b21]" name="test1" duration-ms="2" started-at="2017-11-07T17:40:29Z" finished-at="2017-11-07T17:40:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="beforemethod()[pri:0, instance:testAnnotations.TestNGannotations@c87b21]" name="beforemethod" is-config="true" duration-ms="0" started-at="2017-11-07T17:40:29Z" finished-at="2017-11-07T17:40:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforemethod -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:testAnnotations.TestNGannotations@c87b21]" name="aftermethod" is-config="true" duration-ms="1" started-at="2017-11-07T17:40:29Z" finished-at="2017-11-07T17:40:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="beforemethod()[pri:0, instance:testAnnotations.TestNGannotations@c87b21]" name="beforemethod" is-config="true" duration-ms="1" started-at="2017-11-07T17:40:29Z" finished-at="2017-11-07T17:40:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforemethod -->
-        <test-method status="PASS" signature="test2()[pri:0, instance:testAnnotations.TestNGannotations@c87b21]" name="test2" duration-ms="3" started-at="2017-11-07T17:40:29Z" finished-at="2017-11-07T17:40:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:testAnnotations.TestNGannotations@c87b21]" name="aftermethod" is-config="true" duration-ms="0" started-at="2017-11-07T17:40:29Z" finished-at="2017-11-07T17:40:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="afterclass()[pri:0, instance:testAnnotations.TestNGannotations@c87b21]" name="afterclass" is-config="true" duration-ms="0" started-at="2017-11-07T17:40:29Z" finished-at="2017-11-07T17:40:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterclass -->
-      </class> <!-- testAnnotations.TestNGannotations -->
+        </test-method> <!-- assert1 -->
+      </class> <!-- com.TestNG.WebDriverClass.AssertiongetTitle -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
