@@ -51,7 +51,7 @@ public class ExtentReportTestNG {
 	Thread.sleep(2000);
 	
 	rep.close();
-	rep.flush();
+	
 	driver.close();
 	}
 }
