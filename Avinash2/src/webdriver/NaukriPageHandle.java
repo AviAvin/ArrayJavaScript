@@ -10,7 +10,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
-
+//Naukri windows open and close
 public class NaukriPageHandle {
 
 	public static void main(String[] args) throws Exception {
