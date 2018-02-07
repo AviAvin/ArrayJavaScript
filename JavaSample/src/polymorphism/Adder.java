@@ -5,12 +5,13 @@ public class  Adder{
 	{
 		return a+b;
 		}  
-	static int add(int a,int b,int c){
+	static int add(int a,int b,int c)
+	{
 		
 		return a+b+c;
 		}  
 	}  
-	class TestOver 
+	class TestOver1
 	{  
 	public static void main(String[] args)
 	{  

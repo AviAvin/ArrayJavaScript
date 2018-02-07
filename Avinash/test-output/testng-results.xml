@@ -1,300 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="4" total="4" passed="0">
+<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
   <reporter-output>
-    <line>
-      <![CDATA[ current application0]]>
-    </line>
-    <line>
-      <![CDATA[ current application1]]>
-    </line>
-    <line>
-      <![CDATA[ current application2]]>
-    </line>
-    <line>
-      <![CDATA[ current application3]]>
-    </line>
-    <line>
-      <![CDATA[Browser opened]]>
-    </line>
-    <line>
-      <![CDATA[Application started]]>
-    </line>
-    <line>
-      <![CDATA[Browser opened]]>
-    </line>
-    <line>
-      <![CDATA[Application started]]>
-    </line>
-    <line>
-      <![CDATA[Browser opened]]>
-    </line>
-    <line>
-      <![CDATA[Application started]]>
-    </line>
-    <line>
-      <![CDATA[Browser opened]]>
-    </line>
-    <line>
-      <![CDATA[Application started]]>
-    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="171877" started-at="2017-11-09T06:18:04Z" finished-at="2017-11-09T06:20:56Z">
+  <suite name="Default suite" duration-ms="1022" started-at="2017-12-30T18:01:51Z" finished-at="2017-12-30T18:01:52Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="171877" started-at="2017-11-09T06:18:04Z" finished-at="2017-11-09T06:20:56Z">
+    <test name="Default test" duration-ms="1022" started-at="2017-12-30T18:01:51Z" finished-at="2017-12-30T18:01:52Z">
       <class name="com.DDF.WordPressLoginExcel">
-        <test-method status="FAIL" signature="LoginToWordPress(java.lang.String, java.lang.String)[pri:0, instance:com.DDF.WordPressLoginExcel@120ebad]" name="LoginToWordPress" duration-ms="18757" started-at="2017-11-09T11:48:05Z" data-provider="WordPressData" finished-at="2017-11-09T11:48:24Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin11]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[demo12]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
+        <test-method status="SKIP" signature="LoginToWordPress(java.lang.String, java.lang.String)[pri:0, instance:com.DDF.WordPressLoginExcel@acaea5]" name="LoginToWordPress" duration-ms="0" started-at="2017-12-30T23:31:52Z" data-provider="wordPressData" finished-at="2017-12-30T23:31:52Z">
+          <exception class="java.lang.RuntimeException">
             <message>
-              <![CDATA[user is not able to login expected [true] but found [false]]]>
+              <![CDATA[java.lang.IllegalStateException: Cannot get a STRING value from a NUMERIC cell]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: user is not able to login expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:496)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.DDF.WordPressLoginExcel.LoginToWordPress(WordPressLoginExcel.java:32)
+              <![CDATA[java.lang.RuntimeException: java.lang.IllegalStateException: Cannot get a STRING value from a NUMERIC cell
+	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:115)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:509)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1308)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1036)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1126)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: java.lang.IllegalStateException: Cannot get a STRING value from a NUMERIC cell
+	at org.apache.poi.xssf.usermodel.XSSFCell.typeMismatch(XSSFCell.java:1062)
+	at org.apache.poi.xssf.usermodel.XSSFCell.getRichStringCellValue(XSSFCell.java:395)
+	at org.apache.poi.xssf.usermodel.XSSFCell.getStringCellValue(XSSFCell.java:347)
+	at com.DDF.ExcelPOI.getData(ExcelPOI.java:40)
+	at com.DDF.WordPressLoginExcel.passData(WordPressLoginExcel.java:59)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:55)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
+	... 22 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
-            <line>
-              <![CDATA[Browser opened]]>
-            </line>
-            <line>
-              <![CDATA[Application started]]>
-            </line>
           </reporter-output>
         </test-method> <!-- LoginToWordPress -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.DDF.WordPressLoginExcel@120ebad]" name="tearDown" is-config="true" duration-ms="7804" started-at="2017-11-09T11:48:24Z" finished-at="2017-11-09T11:48:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="FAIL" signature="LoginToWordPress(java.lang.String, java.lang.String)[pri:0, instance:com.DDF.WordPressLoginExcel@120ebad]" name="LoginToWordPress" duration-ms="86870" started-at="2017-11-09T11:48:32Z" data-provider="WordPressData" finished-at="2017-11-09T11:49:59Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[abinashkate]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[avi@lipu]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[user is not able to login expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: user is not able to login expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:496)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.DDF.WordPressLoginExcel.LoginToWordPress(WordPressLoginExcel.java:32)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-            <line>
-              <![CDATA[Browser opened]]>
-            </line>
-            <line>
-              <![CDATA[Application started]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- LoginToWordPress -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.DDF.WordPressLoginExcel@120ebad]" name="tearDown" is-config="true" duration-ms="7116" started-at="2017-11-09T11:49:59Z" finished-at="2017-11-09T11:50:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="FAIL" signature="LoginToWordPress(java.lang.String, java.lang.String)[pri:0, instance:com.DDF.WordPressLoginExcel@120ebad]" name="LoginToWordPress" duration-ms="17246" started-at="2017-11-09T11:50:06Z" data-provider="WordPressData" finished-at="2017-11-09T11:50:23Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[demo123]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[user is not able to login expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: user is not able to login expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:496)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.DDF.WordPressLoginExcel.LoginToWordPress(WordPressLoginExcel.java:32)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-            <line>
-              <![CDATA[Browser opened]]>
-            </line>
-            <line>
-              <![CDATA[Application started]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- LoginToWordPress -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.DDF.WordPressLoginExcel@120ebad]" name="tearDown" is-config="true" duration-ms="6087" started-at="2017-11-09T11:50:23Z" finished-at="2017-11-09T11:50:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="FAIL" signature="LoginToWordPress(java.lang.String, java.lang.String)[pri:0, instance:com.DDF.WordPressLoginExcel@120ebad]" name="LoginToWordPress" duration-ms="18874" started-at="2017-11-09T11:50:29Z" data-provider="WordPressData" finished-at="2017-11-09T11:50:48Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[demo1234]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[user is not able to login expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: user is not able to login expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:496)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.DDF.WordPressLoginExcel.LoginToWordPress(WordPressLoginExcel.java:32)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-            <line>
-              <![CDATA[Browser opened]]>
-            </line>
-            <line>
-              <![CDATA[Application started]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- LoginToWordPress -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.DDF.WordPressLoginExcel@120ebad]" name="tearDown" is-config="true" duration-ms="8041" started-at="2017-11-09T11:50:48Z" finished-at="2017-11-09T11:50:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
       </class> <!-- com.DDF.WordPressLoginExcel -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

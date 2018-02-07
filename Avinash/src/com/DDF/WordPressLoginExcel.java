@@ -4,9 +4,12 @@ package com.DDF;
 
 import org.openqa.selenium.By;
 
+
+
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.server.browserlaunchers.Sleeper;
+ 
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
@@ -14,7 +17,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class WordPressLoginExcel {
-	@Test(dataProvider="WordPressData")
+	@Test(dataProvider="wordPressData")
 	public void LoginToWordPress(String UserName,String Password)   
 	{
 		WebDriver d=new FirefoxDriver();
@@ -27,14 +30,14 @@ public class WordPressLoginExcel {
 		d.findElement(By.id("email")).sendKeys(UserName);
 		d.findElement(By.id("pass")).sendKeys(Password);
 		d.findElement(By.xpath("//input[@value='Log In' and @type='submit']")).click();
-		Sleeper.sleepTightInSeconds(5);
+		 
 		
 	  Assert.assertTrue(d.getTitle().contains("Facebook – log in or sign up"), "user is not able to login");
 		System.out.println("page Title verified- user is able to login successfully");
 		d.close();	
 		
 	}
-	@AfterMethod
+	@AfterMethod  
 	
 	public void tearDown()
 	{
@@ -44,10 +47,10 @@ public class WordPressLoginExcel {
 	
 	
 	
-	@DataProvider(name="WordPressData")
+	@DataProvider(name="wordPressData")
 	public Object[][] passData()
 	{
-		ExcelPOI config=new ExcelPOI("D:\\workspace\\Avinash\\src\\com\\Avinash\\Test_Data\\pr2.xlsx ");
+		ExcelPOI config=new ExcelPOI("C:/Users/lenovo/Desktop/pr2.xlsx ");
 		int rows=config.getRowCount(0);
 		Object[][] data=new Object[rows][2];
 		for(int i=0;i<rows ;i++)

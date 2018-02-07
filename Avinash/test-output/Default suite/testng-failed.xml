@@ -6,7 +6,7 @@
       <class name="com.DDF.WordPressLoginExcel">
         <methods>
           <include name="tearDown"/>
-          <include name="LoginToWordPress" invocation-numbers="0 1 2 3"/>
+          <include name="LoginToWordPress"/>
         </methods>
       </class> <!-- com.DDF.WordPressLoginExcel -->
     </classes>

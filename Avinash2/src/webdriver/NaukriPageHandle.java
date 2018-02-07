@@ -10,6 +10,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 //Naukri windows open and close
 public class NaukriPageHandle {
 
@@ -43,9 +44,9 @@ public class NaukriPageHandle {
 		   
 		   
 		driver.switchTo().window(parentWin);
-		 System.out.println("Naukri opened");
-		
-        
+		 System.out.println(driver.getTitle());
+		Assert.assertEquals(driver.getTitle(), "Jobs - Recruitment - Job Search - Employment - Job Vacancies - Naukri.com");
+		 System.out.println("Title matched");
 		driver.findElement(By.linkText("Employer Zone")).click();
 		 System.out.println("Employer opened");
 	    
@@ -78,6 +79,7 @@ public class NaukriPageHandle {
 		System.out.println("Employer window closed");
 		Thread.sleep(5000);
 		driver.quit();
+		
 		
 	}
 
